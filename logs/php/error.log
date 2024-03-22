@@ -1,0 +1,19 @@
+[22-Mar-2024 10:23:13 UTC] WordPress database error Table 'local.wp_actionscheduler_actions' doesn't exist for query SHOW COLUMNS FROM wp_actionscheduler_actions LIKE 'priority' made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_Versions::initialize_latest_version, action_scheduler_initialize_3_dot_6_dot_3, ActionScheduler::init, do_action('action_scheduler_pre_init'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}
+[22-Mar-2024 15:00:49 UTC] PHP Warning:  Undefined array key "cf7_templates" in C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\royal-elementor-addons\modules\forms\widgets\wpr-forms.php on line 2400
+[22-Mar-2024 15:00:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function WprAddons\Modules\Forms\Widgets\wpforms_display() in C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\royal-elementor-addons\modules\forms\widgets\wpr-forms.php:2404
+Stack trace:
+#0 C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\royal-elementor-addons\modules\forms\widgets\wpr-forms.php(2431): WprAddons\Modules\Forms\Widgets\Wpr_Forms->render_wpforms_template(Array)
+#1 C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\elementor\includes\base\controls-stack.php(2321): WprAddons\Modules\Forms\Widgets\Wpr_Forms->render()
+#2 C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\elementor\includes\base\widget-base.php(634): Elementor\Controls_Stack->render_by_mode()
+#3 C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\elementor\core\base\document.php(372): Elementor\Widget_Base->render_content()
+#4 C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\elementor\includes\managers\widgets.php(461): Elementor\Core\Base\Document->render_element(Array)
+#5 [internal function]: Elementor\Widgets_Manager->ajax_render_widget(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#6 C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\elementor\core\common\modules\ajax\module.php(176): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#7 C:\Users\selor\Local Sites\krvgroup\app\public\wp-includes\class-wp-hook.php(324): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#8 C:\Users\selor\Local Sites\krvgroup\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 C:\Users\selor\Local Sites\krvgroup\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\selor\Local Sites\krvgroup\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#11 {main}
+  thrown in C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\royal-elementor-addons\modules\forms\widgets\wpr-forms.php on line 2404
+[22-Mar-2024 15:01:01 UTC] PHP Warning:  Undefined array key "ninja_forms_templates" in C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\royal-elementor-addons\modules\forms\widgets\wpr-forms.php on line 2408
+[22-Mar-2024 15:02:04 UTC] PHP Warning:  Undefined array key "ninja_forms_templates" in C:\Users\selor\Local Sites\krvgroup\app\public\wp-content\plugins\royal-elementor-addons\modules\forms\widgets\wpr-forms.php on line 2408
